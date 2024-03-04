@@ -1,0 +1,249 @@
+@import "setup/fonts";
+@import "setup/variables";
+@import "setup/mixins";
+@import "setup/colors";
+@import "setup/icons";
+@import "setup/elements";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "post/comment";
+@import "profile/profile";
+
+// Overwrite Bootstrap
+.btn{
+    border-radius: 4px;
+
+    .icon {
+        margin-right: 0.5rem;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.disabled,
+    &:disabled {
+        opacity: 0.5;
+    }
+
+    //&:not(.btn-outline-primary),
+    //&:not(.btn-outline-transparent) {
+    //    color: $white;
+    //    &:hover {
+    //        color: $white;
+    //    }
+    //}
+
+    &.btn-with-link {
+        &:hover {
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+        a {
+            display: block;
+            color: $white;
+        }
+    }
+}
+
+
+.card-header {
+    background-color: $white;
+    border-bottom: none;
+}
+
+.form-control {
+    height: 2.5rem;
+}
+
+.spacer-b2 {
+    margin-bottom: 2px;
+}
+
+.spacer-t2 {
+    margin-top: 2px;
+}
+
+/* icon sizes */
+
+.rounded-box {
+    border-radius: $border-radius;
+    background-color: $brand-color-base;
+    //box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.5);
+}
+
+.rounded-video iframe {
+    border-radius: $border-radius;
+}
+
+.no-background {
+    background: none;
+}
+
+.rounded-highlight-box {
+    @extend .rounded-box;
+    color: $brand-color-base;
+    background-color: $brand-color-highlight;
+}
+
+.rounded-highlight-box {
+    @extend .rounded-box;
+    color: $brand-color-base;
+    background-color: $brand-color-highlight;
+}
+
+.checkbox--input-tablecell {
+    display: table-cell;
+    float: left;
+    margin-top: 0.25rem;
+}
+
+.checkbox--text-tablecell {
+    display: table-cell;
+}
+
+.error-message {
+    color: $dark-red;
+    font-size: 13px;
+}
+
+.h-60 {
+    height: 60px;
+}
+
+.w-83 {
+    width: 83px;
+}
+
+.w-64 {
+    min-width: 64px;
+    width: 64px;
+    max-width: 64px;
+}
+
+.w-25px {
+    width: 25px;
+    min-width: 25px;
+}
+
+.spinner-grow {
+    &.duration {
+        &-1500 {
+            -webkit-animation: spinner-grow 1.5s linear infinite;
+            animation: spinner-grow 1.5s linear infinite;
+        }
+    }
+}
+
+.validation-error {
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: $dark-red;;
+}
+
+.form-action-link {
+    text-align: right;
+}
+
+.text-grey-not-white {
+    color: $light-grey-text !important;
+}
+
+.bg-grey-not-white {
+    background-color: $light-grey-background !important;
+}
+
+// Hide the number arrows
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* https://bugzilla.mozilla.org/show_bug.cgi?id=1355521 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.only {
+    &--desktop {
+        display: none;
+        @media (min-width: 767px) {
+            display: initial;
+        }
+    }
+
+    &--mobile {
+        display: none;
+        @media (max-width: 766px) {
+            display: initial;
+        }
+    }
+}
+
+.user-actions {
+    .btn {
+        margin-bottom: 0.7rem;
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 0;
+            margin-right: 1rem;
+        }
+    }
+}
+
+#replySvg {
+    @media only screen and (min-width: 768px) {
+        transform: scale(1.5);
+    }
+}
+
+#reply {
+    fill: $brand-color-primary;
+}
+
+.input--range {
+    label {
+        display: grid !important;
+        grid-template-columns: 1fr 35% 1fr !important;
+        grid-template-areas: "min null max" !important;
+        align-items: flex-end;
+
+        @media only screen and (min-width: 375px) {
+            grid-template-columns: 1fr 43% 1fr !important;
+        }
+
+        @media only screen and (min-width: 525px) {
+            grid-template-columns: 1fr 65% 1fr !important;
+        }
+
+        &.form-check-label {
+            display: flex !important;
+        }
+
+        span {
+            text-align: center;
+        }
+
+        .min {
+            grid-area: min;
+            text-align: left;
+        }
+
+        .max {
+            grid-area: max;
+            text-align: right;
+        }
+    }
+}
+
+textarea {
+    padding: 8px;
+}

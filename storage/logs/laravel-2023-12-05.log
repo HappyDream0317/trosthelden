@@ -1,0 +1,48 @@
+[2023-12-05 04:06:16] production.DEBUG: SENDINBLUE UPDATE CONTACTS ATTRIBUTE: user: bietenphone@googlemail.com attributes: {"PREMIUM":false,"PREMIUM_END_DATE":"2023-12-05"}  
+[2023-12-05 07:58:08] production.DEBUG: SENDINBLUE EMIT EVENT : user: christinabiermann1@gmail.com event: Nutzer geloescht attributes: {"AUTOMATION_KEY":99,"DELETION_DATE":"2023-12-05"}  
+[2023-12-05 07:58:08] production.DEBUG: SENDINBLUE UPDATE CONTACTS ATTRIBUTE: user:  attributes: {"PREMIUM":false,"PREMIUM_END_DATE":"2023-12-05"} Missing the required parameter $identifier when calling updateContact  
+[2023-12-05 07:58:08] production.DEBUG: SENDINBLUE UPDATE CONTACTS ATTRIBUTE: user:  attributes: {"PREMIUM":false,"PREMIUM_END_DATE":"2023-12-05"}  
+[2023-12-05 11:22:42] production.DEBUG: SENDINBLUE GET CONTACT: user: juliarenke@web.de [404] Client error: `GET https://api.brevo.com/v3/contacts/juliarenke%40web.de` resulted in a `404 Not Found` response:
+{"code":"document_not_found","message":"Contact does not exist"}
+  
+[2023-12-05 11:23:22] production.DEBUG: SENDINBLUE EMIT EVENT : user: juliarenke@web.de event: Trauernder oder Trauerhelfer attributes: {"MEMBER_TYPE":"mourner"}  
+[2023-12-05 11:26:43] production.DEBUG: SENDINBLUE EMIT EVENT : user: juliarenke@web.de event: Fragebogen ausgefüllt attributes: {"FRABO_COMPLETE":true}  
+[2023-12-05 11:27:29] production.DEBUG: SENDINBLUE EMIT EVENT : user: juliarenke@web.de event: Neue Anmeldung attributes: {"DOUBLE_OPT-IN":1,"NOTIFICATION_AKTIONEN":true,"NOTIFICATION_BEFRAGUNG":true,"NOTIFICATION_AUTOMATION":true,"REGISTER_DATE":"2023-12-05"}  
+[2023-12-05 11:28:02] production.DEBUG: SENDINBLUE EMIT EVENT : user: juliarenke@web.de event: Profilspruch ausgefüllt attributes: {"PROFILE_SLOGAN_SET":true}  
+[2023-12-05 11:28:52] production.DEBUG: SENDINBLUE EMIT EVENT : user: juliarenke@web.de event: Profilbild hochgeladen attributes: {"PROFILE_PICTURE_SET":true}  
+[2023-12-05 11:38:46] production.DEBUG: SENDINBLUE EMIT EVENT : user: juliarenke@web.de event: Fremdprofil angeschaut attributes: {"FOREIGN_PROFILE_VIEWED":true}  
+[2023-12-05 11:40:20] production.DEBUG: SENDINBLUE EMIT EVENT : user: juliarenke@web.de event: Anfrage versenden attributes: {"PREMIUM_PAYWALL_SEEN":true}  
+[2023-12-05 13:47:55] production.DEBUG: SENDINBLUE GET CONTACT: user: kerstin.rita.schotter@gmail.vom [404] Client error: `GET https://api.brevo.com/v3/contacts/kerstin.rita.schotter%40gmail.vom` resulted in a `404 Not Found` response:
+{"code":"document_not_found","message":"Contact does not exist"}
+  
+[2023-12-05 13:48:08] production.DEBUG: SENDINBLUE EMIT EVENT : user: kerstin.rita.schotter@gmail.vom event: Trauernder oder Trauerhelfer attributes: {"MEMBER_TYPE":"mourner"}  
+[2023-12-05 14:16:24] production.DEBUG: SENDINBLUE EMIT EVENT : user: mail@gregorkessler.de event: (mindestens) 1 Nachricht erhalten attributes: {"MESSAGES_1_RECEIVED":true}  
+[2023-12-05 20:31:43] production.DEBUG: SENDINBLUE GET CONTACT: user: r.crow@hotmail.de [404] Client error: `GET https://api.brevo.com/v3/contacts/r.crow%40hotmail.de` resulted in a `404 Not Found` response:
+{"code":"document_not_found","message":"Contact does not exist"}
+  
+[2023-12-05 21:05:04] production.DEBUG: SENDINBLUE GET CONTACT: user: pia-moellers@web.de [404] Client error: `GET https://api.brevo.com/v3/contacts/pia-moellers%40web.de` resulted in a `404 Not Found` response:
+{"code":"document_not_found","message":"Contact does not exist"}
+  
+[2023-12-05 21:05:33] production.DEBUG: SENDINBLUE EMIT EVENT : user: pia-moellers@web.de event: Neue Anmeldung attributes: {"DOUBLE_OPT-IN":1,"NOTIFICATION_AKTIONEN":true,"NOTIFICATION_BEFRAGUNG":true,"NOTIFICATION_AUTOMATION":true,"REGISTER_DATE":"2023-12-05"}  
+[2023-12-05 21:05:42] production.DEBUG: SENDINBLUE EMIT EVENT : user: pia-moellers@web.de event: Trauernder oder Trauerhelfer attributes: {"MEMBER_TYPE":"mourner"}  
+[2023-12-05 21:11:14] production.DEBUG: SENDINBLUE EMIT EVENT : user: pia-moellers@web.de event: Fragebogen ausgefüllt attributes: {"FRABO_COMPLETE":true}  
+[2023-12-05 21:16:09] production.DEBUG: SENDINBLUE EMIT EVENT : user: pia-moellers@web.de event: Fremdprofil angeschaut attributes: {"FOREIGN_PROFILE_VIEWED":true}  
+[2023-12-05 21:16:22] production.DEBUG: SENDINBLUE EMIT EVENT : user: pia-moellers@web.de event: Anfrage versenden attributes: {"PREMIUM_PAYWALL_SEEN":true}  
+[2023-12-05 21:16:57] production.DEBUG: SENDINBLUE EMIT EVENT : user: pia-moellers@web.de event: Anfrage versenden attributes: {"PREMIUM_PAYWALL_SEEN":true}  
+[2023-12-05 21:20:23] production.DEBUG: SENDINBLUE EMIT EVENT : user: r.crow@hotmail.de event: Trauernder oder Trauerhelfer attributes: {"MEMBER_TYPE":"mourner"}  
+[2023-12-05 21:24:00] production.DEBUG: SENDINBLUE EMIT EVENT : user: r.crow@hotmail.de event: Fragebogen ausgefüllt attributes: {"FRABO_COMPLETE":true}  
+[2023-12-05 21:24:14] production.DEBUG: SENDINBLUE EMIT EVENT : user: r.crow@hotmail.de event: Neue Anmeldung attributes: {"DOUBLE_OPT-IN":1,"NOTIFICATION_AKTIONEN":true,"NOTIFICATION_BEFRAGUNG":true,"NOTIFICATION_AUTOMATION":true,"REGISTER_DATE":"2023-12-05"}  
+[2023-12-05 21:26:07] production.DEBUG: SENDINBLUE EMIT EVENT : user: r.crow@hotmail.de event: Profilbild hochgeladen attributes: {"PROFILE_PICTURE_SET":true}  
+[2023-12-05 21:26:27] production.DEBUG: SENDINBLUE EMIT EVENT : user: r.crow@hotmail.de event: Anfrage versenden attributes: {"PREMIUM_PAYWALL_SEEN":true}  
+[2023-12-05 21:26:46] production.DEBUG: SENDINBLUE EMIT EVENT : user: r.crow@hotmail.de event: Anfrage versenden attributes: {"PREMIUM_PAYWALL_SEEN":true}  
+[2023-12-05 22:33:30] production.DEBUG: SENDINBLUE EMIT EVENT : user: j.schulien@icloud.com event: (mindestens) 1 Nachricht erhalten attributes: {"MESSAGES_1_RECEIVED":true}  
+[2023-12-05 22:34:54] production.DEBUG: SENDINBLUE EMIT EVENT : user: j.schulien@icloud.com event: Anfrage versenden attributes: {"PREMIUM_PAYWALL_SEEN":true}  
+[2023-12-05 22:34:54] production.DEBUG: SENDINBLUE EMIT EVENT : user: annettberger@yahoo.de event: Nachrichten an (mindestens) 2 Personen verschickt attributes: {"MESSAGE_2_MOURNERS_CONTACTED":true}  
+[2023-12-05 22:37:52] production.DEBUG: SENDINBLUE EMIT EVENT : user: annettberger@yahoo.de event: Profilspruch ausgefüllt attributes: {"PROFILE_SLOGAN_SET":true}  
+[2023-12-05 23:02:11] production.DEBUG: PAYMENT ERROR: App\Payment\BillwerkApi::getCustomers App\Payment\BillwerkApi::getCustomers  
+[2023-12-05 23:04:23] production.DEBUG: PAYMENT ERROR: App\Payment\BillwerkApi::getCustomers App\Payment\BillwerkApi::getCustomers  
+[2023-12-05 23:04:25] production.DEBUG: SENDINBLUE UPDATE CONTACTS ATTRIBUTE: user: j.schulien@icloud.com attributes: {"PREMIUM":true,"PREMIUM_START_DATE":"2023-12-05"}  
+[2023-12-05 23:04:25] production.DEBUG: SENDINBLUE EMIT EVENT : user: j.schulien@icloud.com event: Nutzer ist Premium attributes: {"PREMIUM":true,"BILLWERK_EMAIL":"j.schulien@icloud.com","BILLWERK_PRODUCT_VARIANT":"3 Monate TrostHelden-Mitgliedschaft","BILLWERK_PAYMENT_METHOD":"PayPal","BILLWERK_VOUCHER":null}  
+[2023-12-05 23:04:27] production.DEBUG: SENDINBLUE UPDATE CONTACTS ATTRIBUTE: user: j.schulien@icloud.com attributes: {"PREMIUM":true,"PREMIUM_START_DATE":"2023-12-05"}  
+[2023-12-05 23:39:09] production.DEBUG: SENDINBLUE EMIT EVENT : user: lenahilbich@gmx.de event: Anfrage versenden attributes: {"PREMIUM_PAYWALL_SEEN":true}  
+[2023-12-05 23:41:21] production.DEBUG: SENDINBLUE EMIT EVENT : user: annettberger@yahoo.de event: (mindestens) 1 Nachricht erhalten attributes: {"MESSAGES_1_RECEIVED":true}  

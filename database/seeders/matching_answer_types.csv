@@ -1,0 +1,13 @@
+id;created_at;updated_at;name;description
+1;;;checkbox;
+2;;;radio;
+3;;;text;
+4;;;textarea;
+5;;;select;
+6;;;date;
+7;;;skala;
+8;;;meta;just content, no answer needed!
+9;;;collapse_checkbox;
+10;;;collapse_select;
+11;;;collapse_radio;
+12;;;collapse_mixed;

@@ -1,0 +1,16 @@
+{
+    "marcellus": {
+        "normal": "marcellus_normal_1788ee51316bd28ecbbdac2b281377a6"
+    },
+    "ibm plex sans": {
+        "300": "ibm_plex_sans_300_99266bfc0dee268d545887a6dc0e9458"
+    },
+    "source sans pro": {
+        "normal": "source_sans_pro_normal_0277371180f13047fcd991298884d663"
+    },
+    "lato": {
+        "300": "\/var\/www\/html\/public\/fonts\/\/lato_300_d2ffa7a55b2bc158f702577f1536090d",
+        "normal": "\/var\/www\/html\/public\/fonts\/\/lato_normal_4a43aabfee5a027ffe8d23cd48056c16",
+        "bold": "lato_bold_e4070894da8d39699736132a356d79f3"
+    }
+}

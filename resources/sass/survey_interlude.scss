@@ -1,0 +1,39 @@
+@import "setup/variables";
+
+main {
+    border-radius: $border-radius;
+    text-align: center;
+
+    & h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    & h1 + span {
+        font-size: 1rem;
+        color: $brand-color-primary;
+    }
+    & ul {
+        display: inline-block;
+        text-align: left;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & > li {
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+            text-indent: -0.7rem;
+            color: $brand-color-primary;
+
+            &::before {
+                content: "• ";
+                color: $brand-color-highlight;
+                font-weight: bold;
+            }
+        }
+    }
+    & ul,
+    & p {
+        margin-top: 2rem;
+    }
+}

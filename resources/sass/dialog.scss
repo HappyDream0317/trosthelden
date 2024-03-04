@@ -1,0 +1,217 @@
+@import "setup/variables";
+
+.wrapper {
+    padding: 0.625rem;
+    overflow: hidden;
+
+    & > .hint {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 0.625rem;
+        font-size: 0.8rem;
+        background-color: $light-grey-background;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+    }
+}
+
+.header {
+    display: flex;
+    margin-top: 0;
+    font-weight: 500;
+    width: calc(100% - 34px);
+    margin-bottom: 19px;
+
+    span {
+        color: $font-color-base;
+    }
+
+    & .icon {
+        font-size: 2rem;
+        color: $brand-color-highlight;
+        vertical-align: middle;
+        margin-right: 0.625rem;
+    }
+
+    & .recipient {
+        color: $brand-color-primary;
+        font-style: italic;
+    }
+}
+
+.description {
+    margin-bottom: 8px;
+    @media (max-width: 1079px) {
+        br {
+            display: none;
+        }
+    }
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    background-color: $light-grey-background;
+    margin-bottom: 17px;
+}
+
+button:not(.btn-primary):not(.btn-outline-primary) {
+    color: $brand-color-highlight;
+    font-weight: bolder;
+    border: none;
+    background: none;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: space-between;
+
+    &.right {
+        justify-content: flex-end;
+    }
+
+    & > p {
+        flex: 1;
+    }
+
+    & > p.hint {
+        line-height: 0.75rem;
+        font-size: 0.75rem;
+    }
+}
+
+.confirmation-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    & > div {
+        flex: 1;
+    }
+
+    & > button {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: $border-radius;
+        background-color: $light-grey-background;
+        border: none;
+        margin-left: 1rem;
+
+        & > .icon {
+            font-size: 2rem;
+        }
+    }
+}
+
+.interaction-modal-box {
+    &.rounded {
+        overflow: hidden;
+    }
+
+    .closebtn {
+        font-size: 1.5rem;
+    }
+    &__wrapper {
+    }
+
+    &__header,
+    &__content,
+    &__footer {
+        padding: 20px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+
+        .icon {
+            font-size: 1.3rem;
+            margin-right: 2rem;
+            color: $brand-color-highlight;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+
+            @media only screen and (min-width: 425px) {
+                font-size: 2rem;
+            }
+        }
+
+        .copy {
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            text-align: left;
+            font-weight: 500;
+
+            @media only screen and (min-width: 425px) {
+                margin-right: 2.5rem;
+                margin-left: 2.5rem;
+            }
+
+            @media only screen and (min-width: 497px) {
+                margin-top: 0.5rem;
+                margin-right: 3rem;
+                margin-left: 3rem;
+            }
+
+            .recipient {
+                color: $brand-color-primary;
+                font-style: italic;
+            }
+        }
+    }
+
+    &__content {
+        margin-bottom: 2rem;
+        padding: 0 20px;
+
+        .copy {
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        .cta-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btn {
+                flex: 1 0 auto;
+
+                @media only screen and (min-width: 425px) {
+                    flex: 1 0 50%;
+                }
+
+                &-outline-primary {
+                    flex: 0 1 auto;
+
+                    @media only screen and (min-width: 425px) {
+                        flex: 1 0 50%;
+                    }
+
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        background-color: $light-grey-background;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        padding: 15px 20px;
+
+        .copy {
+            line-height: 1.2;
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
